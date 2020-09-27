@@ -35,6 +35,7 @@
                   <div text>Last Name: {{ responseData.lastName }} </div>
                   <div text>Occupation: {{ responseData.occupation }} </div>
                   <div text>Salary Grade: {{ responseData.salaryGrade }} </div>
+                  <div text>Salary Amount: {{ responseData.salaryAmount }} </div>
                   <div text>Created At: {{ responseData.createdAt }} </div>
                   <div text>Update At: {{ responseData.updatedAt }} </div>
                 </div>
@@ -72,6 +73,7 @@ export default {
           this.responseData.lastName = response.data.lastName;
           this.responseData.occupation = response.data.occupation;
           this.responseData.salaryGrade = response.data.salaryGrade;
+          this.responseData.salaryAmount = response.data.salaryAmount;
           this.responseData.createdAt = response.data.created_at;
           this.responseData.updatedAt = response.data.updated_at;
           this.dialog = true;
